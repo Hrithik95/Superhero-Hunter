@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Pages</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uGJgQucwrY6RtAj-rSJsNaWCCJxGnPfMj2fDKHmHdDGUMr61uSvNPWuSpfPMt_x5VwE&usqp=CAU">
+    <link rel="stylesheet" href="style.css">
+</head>
+                <!-- ------------------ Internal CSS ------------- -->
+
+<style>
+    .flex-container {
+        display: flex;                  /* establish flex container */
+        flex-direction: column;            /* default value; can be omitted */
+        flex-wrap: nowrap;              /* default value; can be omitted */
+        justify-content: space-between; 
+        margin-top: 12px; 
+}
+
+    .flex-container p{
+        margin:15px 0px 0px 100px;
+        color:beige;
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+
+    .flex-container button{
+        border:0;
+        background:none;
+        color:rgb(241, 225, 76);
+        margin:-70px 0px 0px 220px;
+        cursor:pointer;
+        font-size:20px;
+        font-family:cursive;
+    }
+  
+  </style>
+
+<body>
+
+              <!-- ------------------ NavBar section ------------- -->
+
+
+    <div class="navbar">
+        <input type="text" name="searchKey" id="search-Key" placeholder="Hunt Your Superhero here...">
+        <h1 id="main-heading">Marvel Superheros</h1>
+        <a href="favourites.html"><button id="favourites">Favourites</button></a>
+    </div>
+
+             <!-- ------------------Superhero Lists------------- -->
+    <div id="display">
+        <ol id="superhero-list" >
+
+        </ol>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

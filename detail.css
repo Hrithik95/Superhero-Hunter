@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://images.hdqwalls.com/wallpapers/bthumb/marvel-legends-2021-4k-zx.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    
+}
+
+     /********************************* NavBar Section **********************************/
+
+body .nav-section{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-heading{
+    margin-right: 24%;
+    color: rgb(138, 13, 13);
+    font-size: 50px;
+}
+
+#home_button{
+    font-size: 20px;
+    font-weight: 550;
+    font-style: inherit;
+    color: white;
+    background: none;
+    border: 0; 
+    margin-top: 15px;
+    margin-right:370px ;
+    cursor: pointer;
+}
+
+   /********************************* Main-Container(Superhero Details) **********************************/
+
+#main-container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#favourites{
+    margin-top: 15% ;
+    margin-left:-20%;
+    font-size: 20px;
+    font-weight: 550;
+    font-style: inherit;
+    color: white;
+    background: none;
+    border: 0; 
+    cursor: pointer;
+    
+}
+ 
+   /********************************* Mark As Favourite Button **********************************/
+         
+
+
+#heart{
+    margin:13px 0px 0px 45%;
+    font-size: 20px;
+    font-weight: 550;
+    font-style: inherit;
+    color: white;
+    background: none;
+    border: 0; 
+    cursor: pointer;
+}
+
+#heart:hover{
+    color:blue;
+}
