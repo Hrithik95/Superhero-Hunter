@@ -70,15 +70,18 @@ function addToList(results){
     }
     const item=results[0];
     console.log(item);
-    mainContainer.innerHTML=`<div >
+    mainContainer.innerHTML=`<div style="color:white;">
                             <p><h4>${item.name}</h4></p>
-                            <img height="300" width="300" src=${item.thumbnail.path}.${item.thumbnail.extension}></div>`;
+                            <img height="300" width="300" src=${item.thumbnail.path}.${item.thumbnail.extension}>
+                            </div>`;
     
-    mainContainer.innerHTML+=`<h2>No. of Comics: ${item.comics.available}</h2>
+    mainContainer.innerHTML+=` <div style="color:white;"> 
+                               <h2>No. of Comics: ${item.comics.available}</h2>
                                <h2>No. of Series:${item.series.available}</h2>
                                <h2>No. of Events:${item.events.available}</h2>
-                               <h2>No. of Stories:${item.stories.available}</h2>`;
-    mainContainer.innerHTML+=`<h2><b>Details : <a style="color:blue;" href=${item.urls[0].url} target="_blank">Click here for more details</a></h2>`;
+                               <h2>No. of Stories:${item.stories.available}</h2>
+                               </div>`;
+    mainContainer.innerHTML+=`<h2><b style="color:white;">Details : <a style="color:red;" href=${item.urls[0].url} target="_blank">Click here for more details</a></h2>`;
                             
     
 }

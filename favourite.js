@@ -27,7 +27,12 @@ async function getAllSuperhero(){
 		data = data.data.results[0];
 		var li = document.createElement('li');
 		console.log(data);
-        li.innerHTML = `<p data-id=${data.id}>${data.name}</p><img height="150" width="150" src=${data.thumbnail.path}.${data.thumbnail.extension}><div><button class='removeFromFav'>Remove</button></div>`;
+		console
+        li.innerHTML = `<div class="container">
+						<p data-id=${data.id}>${data.name}</p>
+						<img height="250" width="250" src=${data.thumbnail.path}.${data.thumbnail.extension}>
+						<button class='removeFromFav'>Remove From Favourites</button>
+						</div>`;
 		list.append(li);
         li.getElementsByClassName('removeFromFav')[0].addEventListener('click',function (){
             removeItemFromLS(data.id);

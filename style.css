@@ -2,74 +2,116 @@
      
 
 
-*{
-    padding: 0;
-    margin: 0;
-}
-
-
-body{
-    height: 100vh;
-    width: 100%;
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Cool-Marvel-Computer-Wallpaper-HD.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-}
-  
-       /*********************************    NavBar-Section   **********************************/
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-#main-heading{
-    margin-left: -110px;
-    color: white;
-    font-size: 50px;
-}
-
-#favourites{
-    margin:18px 30px 0px 0px;
-    font-size: 20px;
-    font-weight: 550;
-    font-style: inherit;
-    color: white;
-    background: none;
-    border: 0; 
-}
-
-#favourites:hover{
-    cursor: pointer;
-}
-
-#search-Key{
-    margin: 18px 0px 0px 10px;
-    height: 32px;
-    width: 243px;
-    padding: 5px;
-    border: 2px solid white;
-    border-radius: 20px;
-    background-color: lightpink;
+     *{
+        padding: 0;
+        margin: 0;
+     }
     
-}
-    /********************************* Superhero Lists **********************************/
-
-#superhero-list{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between; 
-    align-items: flex-start;
-    /* border: 2px solid black; */
-    overflow: scroll;
-    height: 90vh;
-    width: fit-content;
-    margin: 0.5% auto;
-}
-
-#superhero-list::-webkit-scrollbar{
-    display: none;
-}
-
+    
+    body{
+        height: 100%;
+        width: 100%;
+        background-image: url(./assets/back-image/fotor_2023-2-16_12_32_41.jpg);
+        background-size: cover;
+        background-size: 100vw 100vh;
+    }
+      
+           /*********************************    NavBar-Section   **********************************/
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(55, 53, 53);
+        height: fit-content;
+    }
+    
+    
+    #main-heading{
+        margin-left: -100px;
+        color: white;
+        background-color: red;
+        font-size: 50px;
+    }
+    
+    #favourites{
+        margin-right: 30px;
+        font-size: 20px;
+        font-weight: 550;
+        font-style: inherit;
+        color: white;
+        background: none;
+        border: 0; 
+    }
+    
+    #favourites:hover{
+        cursor: pointer;
+        color: red;
+    }
+    
+    #search-Key{
+        margin-left: 30px;
+        height: 22px;
+        width: 243px;
+        padding: 5px 15px;
+        border: 2px solid red;
+        border-radius: 20px;
+        background-color: white;
+        
+    }
+        /********************************* Superhero Lists **********************************/
+        #display ol {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+            width: 95vw;
+            overflow: auto;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            margin-left: 25px;
+    }
+    
+        .flex-container p{
+            color:white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .flex-container img{
+            height: 300px;
+            width: 300px;
+        }
+    
+        .flex-container button{
+            border:0;
+            background:none;
+            color:white;
+            cursor:pointer;
+            font-size:20px;
+            font-family: serif;
+            font-weight: 500;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: 15px;
+        }
+        .flex-container button:hover{
+          color: red;
+          font-weight: 700;
+        }
+    
+    #superhero-list{
+        height: 81vh;
+        width: fit-content;
+    } 
+    
+    #superhero-list::-webkit-scrollbar{
+        display: none;
+    }
+    
+    
