@@ -22,6 +22,7 @@ async function fetchAllSuperhero(){
 async function superheroWithName(name){
     var resp = await fetch(fetchCharacterApi+'?ts='+ts+'&apikey='+publicKey+'&hash='+hash+'&nameStartsWith='+name);
     var data = await resp.json();
+    console.log("data",data);
     var result = data.data.results;
     addToList(result);
 }
@@ -32,8 +33,8 @@ function addToList(results){
     results.map((item)=>{
         const li = document.createElement('li');
         li.innerHTML = `<div class="flex-container">
-                                <p >Name : ${item.name}</p>
-                                <img height="110" width="110" src=${item.thumbnail.path}.${item.thumbnail.extension} style="margin:5px 0px 0px 100px;">
+                                <p>${item.name}</p>
+                                <img src=${item.thumbnail.path}.${item.thumbnail.extension}>
                                 
                                 
                                 <a href="detail.html?id=${item.id}"><button> Details </button></a>
